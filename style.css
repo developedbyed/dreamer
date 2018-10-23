@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fbfbfb;
+  font-family: "Krub", sans-serif;
+}
+button {
+  font-family: "Krub", sans-serif;
+}
+
+nav {
+  background: white;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  color: #333333;
+}
+nav ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10%;
+}
+nav ul li {
+  font-size: 18px;
+  list-style: none;
+}
+nav a {
+  color: #fbfbfb;
+  background-color: #764ba2;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+header {
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  width: 50%;
+  margin-left: 50%;
+}
+.header-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90%;
+  z-index: -2;
+}
+header p {
+  margin: 50px 0px;
+  font-size: 30px;
+  width: 60%;
+}
+header h1 {
+  font-size: 64px;
+}
+header button {
+  font-size: 20px;
+  color: #fbfbfb;
+  padding: 15px 25px;
+  background: linear-gradient(to left, #728bff, #764ba2);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header svg {
+  position: absolute;
+  height: 60%;
+  top: 70%;
+  left: 10%;
+  transform: translate(-10%, -70%);
+  animation: fade 1s ease 1s forwards;
+  opacity: 0;
+}
+
+#hand {
+  transform-origin: center center;
+  animation: handAnimation 2s ease infinite alternate;
+}
+#hair3 {
+  fill: rgb(46, 37, 77);
+  animation: hairAnimation 2s ease infinite alternate;
+}
+#Head,
+#Neck {
+  animation: hairAnimation 2s ease infinite alternate;
+}
+
+@keyframes hairAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes handAnimation {
+  from {
+    transform: translate(257px, 188px) rotate(0deg) translate(-257px, -188px);
+  }
+  to {
+    transform: translate(257px, 188px) rotate(20deg) translate(-257px, -188px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.st0 {
+  fill: #ffe0bd;
+}
+.st1 {
+  fill: url(#Body_x2F_Shirt_Color_1_);
+}
+.st2 {
+  fill: #90c3e9;
+}
+.st3 {
+  fill: url(#Hand1_1_);
+}
+.st4 {
+  opacity: 0.1;
+  fill: #0e0d09;
+}
+.st5 {
+  opacity: 0.1;
+  fill: #0f160d;
+}
+.st6 {
+  fill: url(#Hair_1_);
+}
+.st7 {
+  opacity: 0.1;
+  fill: #0c160e;
+}
+.st8 {
+  fill: url(#Hand2_1_);
+}
